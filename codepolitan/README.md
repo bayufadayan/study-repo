@@ -5,7 +5,7 @@ Ini adalah hasil dari belajar yang sudah publish secara gratis. Berikut adalah d
 
 ## Result Study
 
- - **CSS dasar:** <a href="https://pricing-table.tiiny.site/" target="_blank">Web Pricing</a>
+ - **CSS dasar:** [Pricing Table Web](https://pricing-table.tiiny.site/)
  - **Bootstrap:** [Museum Art](https://github.com/matiassingers/awesome-readme)
 
 
