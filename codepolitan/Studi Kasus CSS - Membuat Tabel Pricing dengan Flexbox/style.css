@@ -3,56 +3,145 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-html{
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  flex-direction: column;
+  line-height: 1;
+  margin-block: 2rem;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: #529FFA;
   display: flex;
   align-items: center;
@@ -60,7 +149,7 @@ body{
   min-height: 100vh;
 }
 
-.panel{
+.panel {
   background-color: white;
   border-radius: 10px;
   padding: 15px 25px;
@@ -72,31 +161,47 @@ body{
   text-transform: uppercase;
 }
 
-.pricing-plan{
+.pricing-plan {
   border-bottom: 1px solid #e1f1ff;
 }
 
-.pricing-plan:last-child{
+.pricing-plan a{
+  transition: transform 0.3s ease;
+}
+
+.pricing-plan a:hover{
+  transform: scale(1.2);
+}
+
+.pricing-plan:last-child {
   border-bottom: none;
 }
 
-.pricing-plan img{
+.pricing-plan img {
   margin-bottom: 25px;
   max-width: 100%;
+transition: transform 0.3s ease;
 }
 
-.pricing-header{
+.pricing-plan img:hover {
+  border: 2px solid rgba(82, 159, 250);
+  border-radius: 100px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
+}
+
+.pricing-header {
   color: #888;
   font-weight: 600;
   letter-spacing: 1px;
 }
 
-.pricing-features{
+.pricing-features {
   margin: 50px 0 25px;
   color: #016ff9;
 }
 
-.pricing-features-item{
+.pricing-features-item {
   font-weight: 600;
   letter-spacing: 1px;
   font-size: 12px;
@@ -105,7 +210,7 @@ body{
   border-top: 1px solid #e1f1ff;
 }
 
-.pricing-features-item:last-child{
+.pricing-features-item:last-child {
   border-bottom: 1px solid #e1f1ff;
 }
 
@@ -116,7 +221,7 @@ body{
   font-weight: 700;
 }
 
-.pricing-button{
+.pricing-button {
   border: 1px solid #9dd1ff;
   border-radius: 10px;
   color: #34befe;
@@ -126,36 +231,111 @@ body{
   margin: 25px 0;
 }
 
-.pricing-button:hover, .pricing-button:focus{
+.pricing-button:hover,
+.pricing-button:focus {
   background-color: #e1f1ff;
 }
 
-.pricing-button.is-featured{
+.pricing-button.is-featured {
   background-color: #48AAFF;
   color: white;
 }
 
-.pricing-button.is-featured:hover, 
-.pricing-button.is-featured:focus{
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:focus {
   background-color: #269aff;
   color: white;
 }
 
-@media (min-width: 900px){
-  .panel{
+.none-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 2rem;
+  /* background-color: khaki; */
+}
+
+.title {
+  text-transform: uppercase;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(196, 196, 196, 0.5));
+  width: 80%;
+  max-width: 960px;
+  padding: 20px 25px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.title:hover{
+  /* transform: scale(1.04); */
+  transform: scale(0.93);
+  box-shadow: 15px 12px 10px rgba(0, 0, 0, 0.1)
+}
+
+.title h1 {
+  font-size: xx-large;
+  font-weight: 900;
+  color: white;
+  padding: auto;
+  margin-bottom: 0.5rem;
+}
+
+.title h5 {
+  color: #48AAFF;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+
+.subtitle-container {
+  background-color: white;
+  border-radius: 100px;
+  padding-block: 0.2rem;
+  padding-inline: 0.5rem;
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+  margin-top: 2rem;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+}
+
+.footer span{
+  transition: all 0.5s ease-out allow-discrete;
+}
+
+.footer:hover span{
+  text-decoration: underline;
+  font-weight: 600;
+  padding: 0.3rem 0.5rem;
+  background-color: #016FF9;
+  border-radius: 100px;
+}
+
+@media (min-width: 900px) {
+  .panel {
     flex-direction: row;
   }
 
-  .pricing-plan{
+  .pricing-plan {
     border-bottom: none;
     border-right: 1px solid #e1f1ff;
     padding: 25px 50px;
   }
 
-  .pricing-plan:last-child{
+  .pricing-plan:last-child {
     border-right: none
   }
 }
-
-
-
