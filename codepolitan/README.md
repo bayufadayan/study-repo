@@ -7,6 +7,7 @@ Ini adalah hasil dari belajar yang sudah publish secara gratis. Berikut adalah d
 
  - **CSS dasar:** [Pricing Table Web](https://bayufadayan.github.io/study-repo/codepolitan/Studi%20Kasus%20CSS%20-%20Membuat%20Tabel%20Pricing%20dengan%20Flexbox/#)
  - **Bootstrap:** [Museum Art](https://bayufadayan.github.io/study-repo/codepolitan/Studi%20Kasus%20Bootstrap%20-%20Landing%20Page%20Responsive%20Museum%20Art/)
+ - **Basic JS:** [Guess the Number Games](https://bayufadayan.github.io/study-repo/codepolitan/Studi%20Kasus%20JS%20-%20Game%20Tebakan%20dengan%20While/)
 
 
 ## Authors
