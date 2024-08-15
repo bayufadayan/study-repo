@@ -73,13 +73,14 @@ body {
     border-radius: 100px;
     width: 80vw;
     text-align: center;
+    transition: all 0.3s ease;
 }
 
 input:focus {
-    /* outline: 2px solid rgba(79, 183, 131, 1); */
     outline: 2px solid white;
     outline-offset: 2px;
     box-shadow: 0px 0px 10px rgba(79, 183, 131, 1);
+    padding: 0.9rem 1rem;
 }
 
 button{
@@ -107,5 +108,11 @@ button:hover{
 }
 
 .status {
+    margin-top: 10px;
     display: none;
+}
+
+.result p{
+    margin: 0;
+    padding: 0;
 }

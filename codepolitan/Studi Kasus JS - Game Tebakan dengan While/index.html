@@ -12,6 +12,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 <body>
     <div class="container">
@@ -21,21 +23,24 @@
 
         <div class="form-container">
             <div class="alert alert-warning w-50 tambah" role="alert">
-                Instruksi: Masukkan nilai maksimal, kemudian tebak angka yang dipilih secara acak oleh sistem.
+                Instruksi: <span id="instruksi">Masukan nilai Maksimum</span>
             </div>
             <div class="field-container">
-                <input type="number" id="max-number" placeholder="Masukkan nilai maksimal" />
-                <button id="start-game">Mulai Game</button>
+                <input type="number" placeholder="Masukan Angka saja" id="input-maximum"/>
+                <button id="submit-maximum" type="button" onclick="setMaximum()">Submit Nilai Maksimum</button>
+                <input type="number" placeholder="Masukan Angka saja" id="input-guess" style="display: none;"/>
+                <button id="submit-guess" style="display: none;" onclick="guessNumber()">Submit Tebakan</button>
                 <div class="result">
                     <h5>Maksimum Number: <span id="maximum-guess">N/A</span></h5>
-                    <p>Status: <div class="alert alert-danger status" role="alert" id="status-alert">
-                        A simple info alert—check it out!
-                    </div></p>
+                    <p>Status Game: <span id="attempts-count"></span></p>
+                    <div class="alert alert-secondary status" role="alert" id="mystatus">N/A</div>
+                    <div class="alert alert-danger status" role="alert" id="failed-status"></div>
+                    <div class="alert alert-success status" role="alert" id="success-status">N/A</div>
                 </div>
-                <input type="number" id="guess-number" placeholder="Masukkan tebakan Anda" style="display: none;" />
-                <button id="check-guess" style="display: none;">Cek</button>
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
