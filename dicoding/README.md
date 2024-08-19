@@ -5,7 +5,7 @@ Ini adalah hasil dari belajar yang sudah publish secara gratis. Berikut adalah d
 
 ## Result Study
 
- - **Belajar Web Dasar:** [Bandung Landing Page](https://bayufadayan.github.io/study-repo/dicoding/)
+ - **Belajar Web Dasar:** [Bandung Landing Page](https://bayufadayan.github.io/study-repo/dicoding/01.%20Belajar%20Pemrograman%20Web%20Dasar)
 
 ## Authors
 
