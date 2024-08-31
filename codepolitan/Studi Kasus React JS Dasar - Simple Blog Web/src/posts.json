@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Tutorial React JS",
+        "tags": ["front end", "web dev"],
+        "date": "20-10-12",
+        "isNew": true
+    },
+    {
+        "title": "Cara Deploy React JS",
+        "tags": ["dev ops", "back end"],
+        "date": "20-10-12",
+        "isNew": false
+    },
+    {
+        "title": "Alasan Beralih ke Javascript",
+        "tags": ["fundamental", "article"],
+        "date": "20-10-12",
+        "isNew": false
+    }
+]
