@@ -63,6 +63,32 @@ function App() {
 
 	return (
 		<>
+					
+			<div style={{
+			    backgroundColor: 'white',
+			    padding: '20px',
+			    textAlign: 'center',
+			    margin: '20px auto',
+			    width: 'fit-content',
+			    borderRadius: '8px',
+			    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+			    fontSize: '16px'
+			}}>
+			    <span>
+			        <a href="https://github.com/bayufadayan/study-repo/tree/main/codepolitan/Project%20and%20Case%20Study/Studi%20Kasus%20React%20JS%20-%20Split%20Bill%20App">
+			            Link Repository
+			        </a>
+			    </span>
+    			{" "} | <a href="https://github.com/bayufadayan/">@bayufadayan</a>
+			</div>
+
+
+			<h1 style={{
+			 	textAlign: 'center',
+			 	margin: '40px auto',
+				 fontSize: '32px'}}>Split Bill App
+			</h1>	
+
 			<div className="app">
 				<div className="sidebar">
 					<FriendList friends={friends} onSelected={handleSeletectedFriend} selectedFriend={selectedFriend}/>
