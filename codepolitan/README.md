@@ -12,7 +12,8 @@ Ini adalah hasil dari belajar yang sudah publish secara gratis. Berikut adalah d
  - **React JS:** [Simple Blog Web](https://react-simple-blog-six.vercel.app/)
  - **React JS State:** [FAQ Simple Component](https://react-faq-components.vercel.app/)
  - **React JS Case:** [Split Bill App](https://react-split-bill-app.vercel.app/)
-- **PHP Dasar:** [Todo App](https://php-todo-app-phi.vercel.app/)
+ - **PHP Dasar:** [Todo App](https://php-todo-app-phi.vercel.app/)
+ - **PHP MySQL:** [CRUD App](https://phpmysql-crud.vercel.app/)
 
 
 ## Authors
